@@ -14,3 +14,7 @@ To start the project `git clone` it and run:
 - `pnpm run dev`
 
 > **note:** The build is linked by `pnpm dlx turbo link`
+
+## Testing URL
+
+You can access the importer project working on [vercel](https://cognition-web.vercel.app/).
