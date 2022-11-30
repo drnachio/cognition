@@ -12,3 +12,5 @@ To start the project `git clone` it and run:
 - `vercel link` to link the project
 - `vercel env pull .env` to the the .env file
 - `pnpm run dev`
+
+> **note:** The build is linked by `pnpm dlx turbo link`
