@@ -8,3 +8,5 @@ To start the project `git clone` it and run:
 
 - `pnpm i`
 - `pnpm run dev`
+- `pnpm i -g vercel` (if not installed)
+-
