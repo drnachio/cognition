@@ -1,12 +1,12 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import { signIn, signOut } from "next-auth/react";
-import { trpc } from "../utils/trpc";
-import type { inferProcedureOutput } from "@trpc/server";
-import type { AppRouter } from "@acme/api";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import { signIn, signOut } from 'next-auth/react';
+import { trpc } from '../utils/trpc';
+import type { inferProcedureOutput } from '@trpc/server';
+import type { AppRouter } from '@acme/api';
 
 const PostCard: React.FC<{
-  post: inferProcedureOutput<AppRouter["post"]["all"]>[number];
+  post: inferProcedureOutput<AppRouter['post']['all']>[number];
 }> = ({ post }) => {
   return (
     <div className="max-w-2xl rounded-lg border-2 border-gray-500 p-4 transition-all hover:scale-[101%]">
@@ -31,11 +31,13 @@ const Home: NextPage = () => {
       <main className="flex h-screen flex-col items-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-8">
           <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
-            Create <span className="text-[hsl(280,100%,70%)]">Cognition</span> Importer
+            <span className="text-[hsl(280,100%,70%)]">
+              Cognition Garden Project
+            </span>{' '}
+            Data Importer
           </h1>
           <AuthShowcase />
-
-          <div className="flex h-[60vh] justify-center overflow-y-scroll px-4 text-2xl">
+          <div className="flex justify-center px-4 text-2xl">
             {postQuery.data ? (
               <div className="flex flex-col gap-4">
                 {postQuery.data?.map((p) => {
@@ -74,7 +76,7 @@ const AuthShowcase: React.FC = () => {
         className="rounded-full bg-white/10 px-10 py-3 font-semibold text-white no-underline transition hover:bg-white/20"
         onClick={session ? () => signOut() : () => signIn()}
       >
-        {session ? "Sign out" : "Sign in"}
+        {session ? 'Sign out' : 'Sign in'}
       </button>
     </div>
   );
