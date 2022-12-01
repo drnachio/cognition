@@ -1,5 +1,9 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["**/*.tsx"],
+  "include": [
+    "**/*.tsx",
+    "../../apps/storybook/Button.stories.tsx",
+    "Button.stories.ts"
+  ],
   "exclude": ["dist", "build", "node_modules"]
 }

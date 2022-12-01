@@ -1,0 +1,5 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["**/*.tsx", "../../packages/ui/Button.tsx"],
+  "exclude": ["dist", "build", "node_modules"]
+}

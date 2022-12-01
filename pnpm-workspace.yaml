@@ -1,5 +1,6 @@
 packages:
   - apps/importer
+  - apps/storybook
   - packages/api
   - packages/auth
   - packages/db
