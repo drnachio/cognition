@@ -6,10 +6,11 @@ The Cognition Project Main Monorepo
 
 To start the project `git clone` it and run:
 
+- `git clone`
+- `cd cognition`
 - `pnpm i`
-- `pnpm run dev`
 - `pnpm i -g vercel` (if not installed)
-- `vercel link` to link the project
+- `vercel link` (to the project `cognition-web`)
 - `vercel env pull .env` to the the .env file
 - `pnpm run dev`
 
