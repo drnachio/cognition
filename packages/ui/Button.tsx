@@ -36,10 +36,11 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   intent,
   size,
+  className,
   ...props
 }) => {
   return (
-    <button {...props} className={buttonStyles({ intent, size })}>
+    <button {...props} className={buttonStyles({ intent, size, className })}>
       {children}
     </button>
   );

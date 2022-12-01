@@ -74,7 +74,7 @@ const AuthShowcase: React.FC = () => {
         </p>
       )}
       <Button
-        intent="primary"        
+        intent="primary"
         onClick={session ? () => signOut() : () => signIn()}
       >
         {session ? 'Sign out' : 'Sign in'}
