@@ -12,7 +12,7 @@ export default {
    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
    * to learn how to generate automatic titles
    */
-  title: 'Button',
+  title: 'Simple Button',
   component: Button,
 } as ComponentMeta<typeof Button>;
 
@@ -33,4 +33,12 @@ SecondaryButton.args = {
   children: 'Secondary Button',
   size: 'medium',
   intent: 'secondary',
+};
+
+export const ErrorButton = Template.bind({});
+
+ErrorButton.args = {
+  children: 'Error Button',
+  size: 'medium',
+  intent: 'error',
 };
