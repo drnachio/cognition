@@ -28,5 +28,5 @@ export const ProfileButton = Template.bind({});
 
 ProfileButton.args = {
   icon: ProfileIcon,
-  current: false,
+  pressed: false,
 };

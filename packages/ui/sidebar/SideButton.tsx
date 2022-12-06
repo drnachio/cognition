@@ -3,7 +3,7 @@ import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
 
 const buttonStyles = cva([
-  'current:text-amber-400 relative z-10 transition-colors lg:hover:text-amber-400',
+  'aria-pressed:text-amber-400 relative z-10 transition-colors lg:hover:text-amber-400',
 ]);
 
 const badgeStyles = cva([
@@ -13,13 +13,13 @@ const badgeStyles = cva([
 export interface SideButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonStyles> {
-  current: boolean;
+  pressed: boolean;
   badgeNumber: number;
   icon: React.FC;
 }
 
 export const SideButton: React.FC<SideButtonProps> = ({
-  current = false,
+  pressed = false,
   badgeNumber = 0,
   icon: Icon,
   ...props
@@ -27,7 +27,7 @@ export const SideButton: React.FC<SideButtonProps> = ({
   <button
     {...props}
     type="button"
-    aria-current={current}
+    aria-pressed={pressed}
     className={buttonStyles()}
   >
     <Icon />
