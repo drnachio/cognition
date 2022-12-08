@@ -3,11 +3,26 @@ import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
 
 const buttonStyles = cva([
-  'aria-pressed:text-amber-400 relative z-10 transition-colors lg:hover:text-amber-400',
+  'aria-pressed:text-amber-400',
+  'relative z-10',
+  'transition-colors',
+  'lg:hover:text-amber-400',
 ]);
 
 const badgeStyles = cva([
-  'absolute top-0 right-0 flex h-4 w-4 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-red-600 text-xs text-white',
+  'absolute',
+  'top-0',
+  'right-0',
+  'flex',
+  'h-4',
+  'w-4',
+  'translate-x-1/2',
+  '-translate-y-1/2',
+  'items-center',
+  'justify-center',
+  'rounded-full',
+  'bg-red-600 text-xs',
+  'text-white',
 ]);
 
 export interface SideButtonProps
