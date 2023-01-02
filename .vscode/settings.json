@@ -7,13 +7,21 @@
   "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
   "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": [
+    "cirugia",
     "drnachio",
+    "egel",
+    "enarm",
+    "espana",
+    "geriatria",
     "manypkg",
+    "medicinalegal",
     "NEXTAUTH",
     "nextjs",
     "superjson",
     "tailwindcss",
     "tanstack",
-    "trpc"
+    "trpc",
+    "unav",
+    "uronefro"
   ]
 }
