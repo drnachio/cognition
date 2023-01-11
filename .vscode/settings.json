@@ -8,6 +8,8 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": [
     "cirugia",
+    "cockroachdb",
+    "directus",
     "drnachio",
     "egel",
     "enarm",
@@ -22,6 +24,7 @@
     "tanstack",
     "trpc",
     "unav",
-    "uronefro"
+    "uronefro",
+    "wpslug"
   ]
 }
